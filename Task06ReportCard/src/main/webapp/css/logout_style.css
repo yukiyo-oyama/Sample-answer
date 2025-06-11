@@ -1,0 +1,20 @@
+/*logout.jsp*/
+
+@charset "UTF-8";
+
+body {
+    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+    background-color: #f9f9f9;
+    color: #444; /* チャコールグレーに設定 */
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin: 100px 30px;
+}
+
+p {
+	margin: 30px;
+}
+

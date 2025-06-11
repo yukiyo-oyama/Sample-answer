@@ -1,0 +1,30 @@
+/*search.jsp*/
+@charset "UTF-8";
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	/*align-items: center;*/
+}
+
+.form-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.form-label {
+	display: block; /* ラベルをブロック要素にする */
+	text-align: center; /* 中央揃え */
+	margin: 10px auto; /* 上下に余白 & 中央揃え */
+	width: 100%; /* 横幅を十分に取る（親formに合わせる） */
+}
+
+p {
+	margin:20px;
+	text-align: center;
+}

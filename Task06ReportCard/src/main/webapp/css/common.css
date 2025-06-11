@@ -1,0 +1,121 @@
+/* 全体に共通の初期化とベーススタイル設定common.css */
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	font-size: 18px;
+	padding: 30px; /* 画面周囲に余白 */
+}
+
+/* タイトル共通 */
+h1, h2 {
+	text-align: center;
+	color: #4682b4;
+	margin: 30px; /* タイトル下に余白 */
+	padding: 10px;
+}
+
+/* メニューボタン共通スタイル */
+.menu-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.menu-button {
+	padding: 15px 25px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 2px 2px 5px #444;
+	background-color: #7aa7f9;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.menu-button:hover {
+	background-color: rgba(62, 101, 211, 0.85);
+	transform: translateY(-2px);
+	box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu-button:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 入力フォーム共通 */
+.large-input {
+	width: 300px;
+	height: 40px;
+	font-size: 18px;
+	padding: 5px 10px;
+	border-radius: 10px; /* 角を丸くする */
+	border: 1px solid #ccc;
+	outline: none; /* フォーカス時の枠を消す（ブラウザ依存） */
+	background-color: #fff;
+	transition: border-color 0.3s, box-shadow 0.3s; /* ホバー時の変化にアニメーション */
+}
+
+.large-input:focus {
+	border-color: #40e0d0;
+	box-shadow: 0 0 5px rgba(64, 224, 208, 0.5);
+}
+
+/* ボタン共通 */
+.button-base {
+	width: auto;
+	align-self: center; /* Flexboxの子要素として横方向中央に揃える */
+	padding: 10px 20px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #40e0d0;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.button-base:hover {
+	background-color: #5c8df6;
+	transform: translateY(-2px);
+}
+
+/* 結果表示用コンテナ */
+.container {
+	overflow-y: auto; /* 縦スクロールバーを表示 */
+	max-height: 500px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.entry {
+	margin-bottom: 15px;
+	padding: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.entry span {
+	display: inline-block;
+	min-width: 150px;
+	margin-right: 20px;
+}

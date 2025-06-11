@@ -1,0 +1,29 @@
+/* login.jsp */
+
+@charset "UTF-8";
+
+form {
+  display: grid;
+  grid-template-columns: 50px 1fr; /* 左: ラベル列, 右: 入力列 */
+  gap: 15px 10px;                 /* 行間・列間の余白 */
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 0 auto;
+}
+
+.button-base {
+  grid-column: span 2;        /* 2列分にまたがる */
+  justify-self: center;       /* ボタンを中央に配置 */
+}
+
+.form-label {
+  text-align: right;
+  align-self: center;
+}
+
+.large-input {
+  width: 100%;
+}
